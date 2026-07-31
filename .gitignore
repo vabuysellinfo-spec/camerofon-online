@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.env*
+*.jks
+*.keystore
+keystore.properties
+*Signing-PRIVATE*.7z
+*.pem
+*.p12
+*.pfx
+*.key
+.DS_Store
+npm-debug.log*
