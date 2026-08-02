@@ -294,61 +294,117 @@ export default function PrivacyPage() {
             права, від яких споживач не може відмовитися за законом.
           </p>
 
-          <h2>13. Доступність сервісу та відсутність гарантій</h2>
+          <h2>13. Відмова від гарантій (сервіс «як є»)</h2>
           <p>
             Camerofon надається за принципом «як є» та «за наявності». У межах,
-            дозволених законом, не гарантуються безперервна чи безпомилкова
-            робота, сумісність з усіма моделями смартфонів, постійна якість
-            відео, збереження з’єднання або відсутність затримок. Робота може
-            залежати від Android, виробника пристрою, стану акумулятора,
-            дозволів, локальної мережі, мобільного оператора, інтернету,
-            Firebase та інших сторонніх сервісів.
+            дозволених законом, не надаються прямо виражені чи такі, що можуть
+            матися на увазі, гарантії безперервної або безпомилкової роботи,
+            придатності для конкретної мети, сумісності з усіма моделями
+            смартфонів, постійної якості відео, збереження з’єднання чи
+            відсутності затримок.
+          </p>
+          <p>
+            Робота сервісу може залежати від Android, виробника та стану
+            пристрою, акумулятора, дозволів, локальної мережі, мобільного
+            оператора, доступу до інтернету, Firebase, WebRTC та інших сторонніх
+            компонентів. Camerofon не гарантує, що сервіс виявить, запише або
+            передасть кожну подію, і не замінює професійну охоронну чи екстрену
+            систему.
           </p>
 
           <h2>14. Обмеження відповідальності</h2>
           <p>
             У максимальних межах, дозволених законом, Camerofon і його власник,
-            розробники та постачальники не несуть відповідальності за:
+            розробники та постачальники не несуть відповідальності за непрямі,
+            випадкові, спеціальні або наслідкові збитки, втрату прибутку, даних
+            чи очікуваної вигоди, а також за наслідки, спричинені:
           </p>
           <ul>
             <li>
-              незаконне, приховане, несанкціоноване або неналежне використання
-              застосунку;
+              незаконним, прихованим, несанкціонованим або неналежним
+              використанням застосунку;
             </li>
             <li>
-              штрафи, претензії чи збитки через відсутність необхідної згоди або
-              порушення приватності;
+              відсутністю необхідної згоди, незаконним місцем розташування
+              камери або порушенням приватності;
             </li>
             <li>
-              пропущені події, переривання відео, затримки, помилки мережі чи
-              недоступність сторонніх сервісів;
+              пропущеними подіями, перериванням відео, затримками, помилками
+              мережі чи недоступністю сторонніх сервісів;
             </li>
             <li>
-              втрату, пошкодження, крадіжку, перегрівання, розрядження чи
-              зношування смартфона або аксесуарів;
+              втратою, пошкодженням, крадіжкою, перегріванням, розрядженням чи
+              зношуванням смартфона або аксесуарів;
             </li>
             <li>
-              втрату записів, налаштувань, доступу, PIN-коду, QR-коду чи коду
+              втратою записів, налаштувань, доступу, PIN-коду, QR-коду чи коду
               активації;
             </li>
             <li>
-              несанкціонований доступ, спричинений діями користувача, слабким
-              захистом пристрою або передаванням кодів третім особам;
-            </li>
-            <li>
-              непрямі, випадкові, спеціальні або наслідкові збитки, втрату
-              прибутку, даних чи очікуваної вигоди.
+              несанкціонованим доступом через дії користувача, недостатній
+              захист пристрою або передавання кодів третім особам.
             </li>
           </ul>
           <p>
-            Якщо відповідальність Camerofon не може бути повністю виключена, її
-            сукупний розмір обмежується сумою, фактично сплаченою користувачем
-            за спірний код або період доступу, якщо інший мінімум не
-            встановлений обов’язковою нормою закону. Це обмеження не діє у
-            випадках, коли закон прямо забороняє його застосування.
+            Жодне положення цього документа не виключає та не обмежує
+            відповідальність Camerofon або права споживача у випадках, коли така
+            відповідальність чи такі права не можуть бути виключені або
+            обмежені законодавством. Якщо відповідальність не може бути
+            виключена, її підстави та розмір визначаються відповідно до
+            застосовного законодавства.
           </p>
 
-          <h2>15. Блокування доступу</h2>
+          <h2>15. Відшкодування збитків (убезпечення)</h2>
+          <p>
+            У межах, дозволених законом, користувач зобов’язується відшкодувати
+            Camerofon документально підтверджені збитки та обґрунтовані витрати,
+            пов’язані з претензіями третіх осіб, лише тією мірою, якою вони
+            безпосередньо спричинені умисним незаконним використанням
+            Camerofon користувачем, встановленням застосунку без належної згоди,
+            прихованим спостереженням, незаконним збиранням або поширенням даних
+            чи навмисним істотним порушенням цього документа.
+          </p>
+          <p>
+            Це положення не покладає на користувача відповідальність за дії
+            Camerofon, порушення з боку власника сервісу або обставини, які
+            користувач не міг розумно контролювати, і не обмежує обов’язкові
+            права споживача.
+          </p>
+
+          <h2>16. Обставини поза розумним контролем</h2>
+          <p>
+            У межах, дозволених законом, Camerofon не несе відповідальності за
+            затримку, переривання або тимчасову неможливість надання сервісу,
+            спричинені обставинами поза його розумним контролем. До них можуть
+            належати війна та бойові дії, стихійні лиха, пожежі, повені,
+            тривалі аварії електромереж, масові збої інтернету чи мобільного
+            зв’язку, кібератаки, обов’язкові рішення органів влади, а також
+            масштабні збої незалежних постачальників інфраструктури, зокрема
+            Firebase або мережевих компонентів WebRTC.
+          </p>
+          <p>
+            Звичайний технічний збій не вважається автоматично форс-мажором.
+            Camerofon докладатиме розумних зусиль для відновлення роботи. Цей
+            розділ застосовується лише в частині, у якій наслідків не можна було
+            розумно уникнути, і не скасовує обов’язкові права споживача.
+          </p>
+
+          <h2>17. Застосовне право та вирішення спорів</h2>
+          <p>
+            Цей документ і відносини, пов’язані з використанням Camerofon,
+            регулюються законодавством України. Це не позбавляє споживача
+            обов’язкового захисту, який надається правом країни його постійного
+            проживання, якщо такий захист підлягає застосуванню незалежно від
+            обраного права.
+          </p>
+          <p>
+            Перед зверненням до суду сторони можуть спробувати врегулювати спір
+            через офіційний канал підтримки. Неврегульовані спори розглядаються
+            компетентним судом відповідно до встановлених законом правил
+            юрисдикції та підсудності.
+          </p>
+
+          <h2>18. Блокування доступу</h2>
           <p>
             Camerofon може відхилити, призупинити або заблокувати активаційний
             код чи доступ до сервісу у разі шахрайства, спроб обходу захисту,
@@ -357,7 +413,7 @@ export default function PrivacyPage() {
             Це не обмежує обов’язкові права добросовісного споживача.
           </p>
 
-          <h2>16. Зміни документа</h2>
+          <h2>19. Зміни документа</h2>
           <p>
             Актуальна версія завжди публікується за адресою
             camerofon.online/privacy/ із датою оновлення. Зміни застосовуються з
@@ -367,7 +423,7 @@ export default function PrivacyPage() {
             означає прийняття оновлених правил у межах, дозволених законом.
           </p>
 
-          <h2>17. Звернення щодо даних і правил</h2>
+          <h2>20. Звернення щодо даних і правил</h2>
           <p>
             Запити щодо персональних даних, видалення доступних серверних даних,
             активації або цих правил можна надіслати через офіційний канал
@@ -573,39 +629,113 @@ export default function PrivacyPage() {
             document limits rights that a consumer cannot waive by law.
           </p>
 
-          <h2>13. Availability and disclaimer</h2>
+          <h2>13. Disclaimer of warranties (“as is” service)</h2>
           <p>
             Camerofon is provided “as is” and “as available”. To the extent
-            permitted by law, uninterrupted or error-free operation,
-            compatibility with every phone, constant video quality, connection
-            continuity and the absence of delays are not guaranteed. Operation
-            may depend on Android, the device manufacturer, battery condition,
-            permissions, local networks, mobile operators, internet access,
-            Firebase and other third-party services.
+            permitted by law, no express or implied warranty is given regarding
+            uninterrupted or error-free operation, fitness for a particular
+            purpose, compatibility with every smartphone model, constant video
+            quality, connection continuity or the absence of delays.
+          </p>
+          <p>
+            Operation may depend on Android, the manufacturer and condition of
+            the device, battery, permissions, local networks, mobile operators,
+            internet access, Firebase, WebRTC and other third-party components.
+            Camerofon does not guarantee that the service will detect, record or
+            transmit every event, and it is not a substitute for a professional
+            security or emergency system.
           </p>
 
           <h2>14. Limitation of liability</h2>
           <p>
             To the maximum extent permitted by law, Camerofon and its owner,
-            developers and providers are not liable for unlawful, covert,
-            unauthorised or improper use; claims, penalties or damage caused by
-            missing consent or privacy violations; missed events, interrupted
-            video, delays, network failures or third-party outages; loss,
-            damage, theft, overheating, discharge or wear of devices and
-            accessories; loss of recordings, settings, access, PINs, QR codes or
-            activation codes; unauthorised access caused by the user&apos;s acts
-            or weak device security; or indirect, incidental, special or
-            consequential loss, including loss of profit, data or expected
-            benefit.
+            developers and providers are not liable for indirect, incidental,
+            special or consequential loss, loss of profit, data or expected
+            benefit, or for consequences caused by:
           </p>
+          <ul>
+            <li>
+              unlawful, covert, unauthorised or improper use of the application;
+            </li>
+            <li>
+              missing consent, unlawful camera placement or privacy violations;
+            </li>
+            <li>
+              missed events, interrupted video, delays, network failures or
+              third-party outages;
+            </li>
+            <li>
+              loss, damage, theft, overheating, discharge or wear of a device or
+              accessories;
+            </li>
+            <li>
+              loss of recordings, settings, access, a PIN, QR code or activation
+              code;
+            </li>
+            <li>
+              unauthorised access caused by the user&apos;s acts, inadequate
+              device security or sharing codes with third parties.
+            </li>
+          </ul>
           <p>
-            Where liability cannot be fully excluded, total liability is limited
-            to the amount actually paid for the disputed code or access period
-            unless mandatory law requires a different minimum. This limitation
-            does not apply where prohibited by law.
+            Nothing in this document excludes or limits Camerofon&apos;s
+            liability or a consumer&apos;s rights where such liability or rights
+            cannot be excluded or limited by law. Where liability cannot be
+            excluded, its basis and amount are determined under applicable law.
           </p>
 
-          <h2>15. Suspension</h2>
+          <h2>15. Indemnification</h2>
+          <p>
+            To the extent permitted by law, the user agrees to compensate
+            Camerofon for documented losses and reasonable costs relating to
+            third-party claims only to the extent directly caused by the
+            user&apos;s intentional unlawful use of Camerofon, installation
+            without proper consent, covert surveillance, unlawful collection or
+            disclosure of data, or a deliberate material breach of this
+            document.
+          </p>
+          <p>
+            This provision does not make the user responsible for
+            Camerofon&apos;s acts, a breach by the service owner or circumstances
+            the user could not reasonably control, and it does not limit
+            mandatory consumer rights.
+          </p>
+
+          <h2>16. Circumstances beyond reasonable control</h2>
+          <p>
+            To the extent permitted by law, Camerofon is not liable for delay,
+            interruption or temporary inability to provide the service caused by
+            circumstances beyond its reasonable control. These may include war
+            and hostilities, natural disasters, fire, flooding, prolonged power
+            failures, widespread internet or mobile-network outages,
+            cyberattacks, binding government action, and large-scale failures of
+            independent infrastructure providers, including Firebase or WebRTC
+            network components.
+          </p>
+          <p>
+            An ordinary technical failure is not automatically treated as force
+            majeure. Camerofon will use reasonable efforts to restore operation.
+            This section applies only to the extent that the consequences could
+            not reasonably have been avoided and does not remove mandatory
+            consumer rights.
+          </p>
+
+          <h2>17. Governing law and dispute resolution</h2>
+          <p>
+            This document and relations concerning the use of Camerofon are
+            governed by the laws of Ukraine. This does not deprive a consumer of
+            mandatory protection provided by the law of the consumer&apos;s
+            habitual country of residence where that protection applies
+            regardless of the chosen law.
+          </p>
+          <p>
+            Before starting court proceedings, the parties may try to resolve a
+            dispute through the official support channel. Unresolved disputes
+            will be heard by a competent court under the jurisdiction and venue
+            rules established by applicable law.
+          </p>
+
+          <h2>18. Suspension</h2>
           <p>
             Camerofon may reject, suspend or block a code or access in cases of
             fraud, attempted circumvention, unauthorised code distribution,
@@ -614,7 +744,7 @@ export default function PrivacyPage() {
             unaffected.
           </p>
 
-          <h2>16. Changes</h2>
+          <h2>19. Changes</h2>
           <p>
             The current version is always published at camerofon.online/privacy/
             with its update date. Changes apply from publication or another
@@ -623,7 +753,7 @@ export default function PrivacyPage() {
             to the extent allowed by law.
           </p>
 
-          <h2>17. Data and terms requests</h2>
+          <h2>20. Data and terms requests</h2>
           <p>
             Requests concerning personal data, deletion of available server
             data, activation or these terms may be sent through Camerofon&apos;s
@@ -636,3 +766,4 @@ export default function PrivacyPage() {
     </main>
   );
 }
+
