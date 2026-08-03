@@ -92,7 +92,7 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">
             <span className="status-dot" />
-            Стабільна версія 1.25.24
+            Стабільна версія 1.25.38
           </div>
 
           <h1>
