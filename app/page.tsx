@@ -245,7 +245,7 @@ export default function Home() {
         </article>
         <article>
           <span className="version-number">1.25</span>
-          <div><strong>{t("Стабільний реліз", "Stable release")}</strong><small>{t("Перевірено на 4 пристроях", "Tested on 4 devices")}</small></div>
+          <div><strong>{t("Стабільний реліз", "Stable release")}</strong><small>{t("Перевірено на реальних пристроях", "Tested on real devices")}</small></div>
         </article>
       </section>
 
