@@ -471,17 +471,17 @@ export default function Home() {
         <div className="download-panel">
           <div className="download-copy">
             <span className="section-kicker light-kicker">{t("Остання стабільна версія", "Latest stable version")}</span>
-            <h2>Camerofon 1.25.24</h2>
+            <h2>Camerofon 1.25.38</h2>
             <p>{t("Підписаний APK для Android 6.0 і новіших версій. Реліз перевірено на чотирьох реальних пристроях.", "Signed APK for Android 6.0 and later. The release has been tested on four physical devices.")}</p>
             <div className="release-facts">
-              <span><b>31.07.2026</b><small>{t("Дата релізу", "Release date")}</small></span>
+              <span><b>03.08.2026</b><small>{t("Дата релізу", "Release date")}</small></span>
               <span><b>APK</b><small>{t("Формат файла", "File format")}</small></span>
               <span><b>SHA-256</b><small>{t("Контрольна сума", "Checksum")}</small></span>
             </div>
           </div>
           <div className="download-card">
             <span className="download-card-icon">{icons.download}</span>
-            <strong>Camerofon-1.25.24.apk</strong>
+            <strong>Camerofon-1.25.38.apk</strong>
             <p id="download-note">{t("Файл підготовлено. Завантаження відкриється після публікації релізу в офіційному сховищі.", "The file is ready. Downloads will become available after the release is published in the official repository.")}</p>
             <span className="pending-button" aria-disabled="true">{t("APK готується до публікації", "APK is being prepared for publication")}</span>
             <small>{t("Не завантажуйте Camerofon зі сторонніх сайтів.", "Do not download Camerofon from third-party websites.")}</small>
