@@ -376,11 +376,15 @@ export default function Home() {
             </li>
             <li>
               <span className="step-number">3</span>
-              <div><strong>Відскануйте QR-код</strong><p>На пульті відкрийте додавання камери та відскануйте код.</p></div>
+              <div><strong>Покажіть QR-код</strong><p>На пульті натисніть «Показати QR».</p></div>
             </li>
             <li>
               <span className="step-number">4</span>
-              <div><strong>Підтвердьте камеру</strong><p>Підтвердьте пристрій — і він з’явиться у вашому списку.</p></div>
+              <div><strong>Підключіть телефон-камеру</strong><p>На телефоні-камері виберіть «Підключити за QR-кодом» або введіть 6-значний код.</p></div>
+            </li>
+            <li>
+              <span className="step-number">5</span>
+              <div><strong>Підтвердьте камеру</strong><p>На пульті натисніть «Підтвердити камеру».</p></div>
             </li>
           </ol>
 
