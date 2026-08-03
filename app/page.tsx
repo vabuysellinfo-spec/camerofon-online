@@ -472,7 +472,7 @@ export default function Home() {
           <div className="download-copy">
             <span className="section-kicker light-kicker">{t("Остання стабільна версія", "Latest stable version")}</span>
             <h2>Camerofon 1.25.38</h2>
-            <p>{t("Підписаний APK для Android 6.0 і новіших версій. Реліз перевірено на чотирьох реальних пристроях.", "Signed APK for Android 6.0 and later. The release has been tested on four physical devices.")}</p>
+            <p>{t("Підписаний APK для Android 6.0 і новіших версій. Реліз перевірено на реальних пристроях.", "Signed APK for Android 6.0 and later. The release has been tested on physical devices.")}</p>
             <div className="release-facts">
               <span><b>03.08.2026</b><small>{t("Дата релізу", "Release date")}</small></span>
               <span><b>APK</b><small>{t("Формат файла", "File format")}</small></span>
