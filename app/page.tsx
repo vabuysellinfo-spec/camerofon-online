@@ -296,6 +296,67 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section capabilities-section" id="release-12538" aria-labelledby="release-12538-title">
+        <div className="section-heading compact-heading">
+          <span className="section-kicker">Camerofon 1.25.38</span>
+          <h2 id="release-12538-title">Пробний доступ і нові можливості</h2>
+          <p>
+            У версії 1.25.38 додано гнучку активацію, зручніше підключення
+            камер і більше налаштувань перегляду.
+          </p>
+        </div>
+
+        <div className="capabilities-grid">
+          <article className="capability-card">
+            <span className="capability-icon">{icons.play}</span>
+            <h3>24 години безкоштовно</h3>
+            <p>Одноразовий пробний період для одного пульта й однієї камери.</p>
+          </article>
+          <article className="capability-card">
+            <span className="capability-icon">{icons.shield}</span>
+            <h3>Basic-код на 30 днів</h3>
+            <p>Один Basic-код надає доступ на 30 днів після активації.</p>
+          </article>
+          <article className="capability-card">
+            <span className="capability-icon">{icons.layers}</span>
+            <h3>Три варіанти активації</h3>
+            <p>Новий пульт, додаткова камера або продовження вибраної камери.</p>
+          </article>
+          <article className="capability-card">
+            <span className="capability-icon">{icons.qr}</span>
+            <h3>QR або ручний код</h3>
+            <p>Підключайте камери через QR-код або вручну за 6-значним кодом.</p>
+          </article>
+          <article className="capability-card">
+            <span className="capability-icon">{icons.layers}</span>
+            <h3>Українська та English</h3>
+            <p>Інтерфейс застосунку доступний українською й англійською мовами.</p>
+          </article>
+          <article className="capability-card">
+            <span className="capability-icon">{icons.bulb}</span>
+            <h3>Світла й темна теми</h3>
+            <p>Вибирайте зручне оформлення застосунку в налаштуваннях.</p>
+          </article>
+          <article className="capability-card">
+            <span className="capability-icon">{icons.camera}</span>
+            <h3>Масштабування до 4×</h3>
+            <p>Збільшуйте відео до чотирьох разів під час перегляду.</p>
+          </article>
+          <article className="capability-card">
+            <span className="capability-icon">{icons.microphone}</span>
+            <h3>Безпечний початок сеансу</h3>
+            <p>Кожен відеосеанс починається з вимкненими мікрофоном, звуком і динаміком.</p>
+          </article>
+        </div>
+
+        <div className="hero-actions" style={{ justifyContent: "center" }}>
+          <a className="secondary-button" href="/buy/">
+            {icons.shield}
+            Дізнатися про Basic-код
+          </a>
+        </div>
+      </section>
+
       <section className="section setup-section" id="setup">
         <div className="setup-panel">
           <div className="section-heading setup-heading">
