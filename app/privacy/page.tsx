@@ -182,26 +182,18 @@ export default function PrivacyPage() {
 
           <h2>7. Відео, аудіо та локальні записи</h2>
           <p>
-            Відео й аудіо передаються між сполученими пристроями через WebRTC.
-            Коли пряме з’єднання неможливе, мережевий трафік може тимчасово
-            маршрутизуватися через технічні сервери передавання. Це не означає
-            створення серверного архіву записів.
-          </p>
-          <p>
-            Camerofon не зберігає відео або аудіозаписи у Firestore. Запис
-            запускається користувачем із телефона-пульта й зберігається локально
-            на цьому телефоні. Користувач відповідає за захист, резервне
-            копіювання, видалення та законне використання локальних записів.
+            Camerofon не зберігає відео або аудіозаписи. Запис запускається
+            користувачем із телефона-пульта й зберігається локально на цьому
+            телефоні. Користувач відповідає за захист, резервне копіювання,
+            видалення та законне використання локальних записів.
           </p>
 
           <h2>8. Хмарна інфраструктура та треті сторони</h2>
           <p>
             Для сполучення пристроїв, сигналізації, стану та push-сповіщень
-            Camerofon може використовувати Firebase, Firestore, Firebase Cloud
-            Messaging, WebRTC, STUN/TURN та іншу необхідну мережеву
-            інфраструктуру. Такі постачальники можуть обробляти технічні дані у
-            своїх центрах обробки даних відповідно до власних правил і вимог
-            законодавства.
+            Camerofon може використовувати необхідну мережеву інфраструктуру.
+            Такі постачальники можуть обробляти технічні дані у своїх центрах
+            обробки даних відповідно до власних правил і вимог законодавства.
           </p>
           <p>
             Camerofon не відповідає за незалежні сервіси третіх сторін, але
@@ -590,26 +582,23 @@ export default function PrivacyPage() {
 
           <h2>7. Video, audio and recordings</h2>
           <p>
-            Video and audio are transmitted between paired devices using WebRTC.
-            If a direct connection is unavailable, traffic may be temporarily
-            routed through relay infrastructure. This does not create a
-            server-side recording archive.
-          </p>
-          <p>
-            Camerofon does not store video or audio recordings in Firestore. A
-            recording is started by the user on the controller phone and is
-            stored locally on that phone. The user is responsible for securing,
-            backing up, deleting and lawfully using local recordings.
+            Camerofon does not store video or audio recordings. A recording is
+            started by the user on the controller phone and is stored locally on
+            that phone. The user is responsible for securing, backing up,
+            deleting and lawfully using local recordings.
           </p>
 
           <h2>8. Service providers</h2>
           <p>
-            Camerofon may use Firebase, Firestore, Firebase Cloud Messaging,
-            WebRTC, STUN/TURN and other necessary network infrastructure for
-            pairing, signalling, status and notifications. Providers may process
-            technical data in their data centres under their own terms and
-            applicable law. Camerofon seeks to share only data necessary for the
-            relevant function.
+            Camerofon may use necessary network infrastructure for device
+            pairing, signalling, status and push notifications. Such providers
+            may process technical data in their data centres under their own
+            terms and applicable law.
+          </p>
+          <p>
+            Camerofon is not responsible for independent third-party services,
+            but seeks to share only the data necessary for the relevant
+            function.
           </p>
 
           <h2>9. Retention and deletion</h2>
