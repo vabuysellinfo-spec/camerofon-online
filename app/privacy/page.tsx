@@ -25,7 +25,7 @@ export default function PrivacyPage() {
       <article className="privacy-document">
         <span className="section-kicker">Camerofon</span>
         <h1>Політика конфіденційності та правила користування</h1>
-        <p className="privacy-updated">Останнє оновлення: 2 серпня 2026 року</p>
+        <p className="privacy-updated">Останнє оновлення: 3 серпня 2026 року</p>
 
         <p>
           <a className="back-link" href="#uk">
@@ -404,26 +404,70 @@ export default function PrivacyPage() {
             юрисдикції та підсудності.
           </p>
 
-          <h2>18. Блокування доступу</h2>
+          <h2>18. Відмова у доступі та блокування</h2>
           <p>
-            Camerofon може відхилити, призупинити або заблокувати активаційний
-            код чи доступ до сервісу у разі шахрайства, спроб обходу захисту,
-            несанкціонованого розповсюдження коду, загрози безпеці, порушення
-            цього документа або обґрунтованої підозри на незаконне використання.
+            Ми не гарантуємо, що послуги Camerofon будуть доступні всім
+            користувачам без винятку. Ми залишаємо за собою право на власний
+            розсуд відмовити будь-якій особі в реєстрації, активації коду або
+            наданні доступу до сервісу без пояснення причин.
+          </p>
+          <p>
+            Camerofon має право негайно, без попереднього повідомлення та без
+            відшкодування коштів, призупинити, обмежити або повністю заблокувати
+            ваш доступ до сервісу, якщо:
+          </p>
+          <ul>
+            <li>
+              ми маємо обґрунтовані підозри, що ви використовуєте застосунок для
+              незаконного або прихованого спостереження;
+            </li>
+            <li>ви порушили будь-яке з положень цих Правил;</li>
+            <li>
+              ваша активність створює загрозу безпеці нашої інфраструктури,
+              інших користувачів або репутації сервісу Camerofon;
+            </li>
+            <li>
+              виявлено шахрайство, спробу обходу захисту або несанкціоноване
+              розповсюдження коду.
+            </li>
+          </ul>
+          <p>
             Це не обмежує обов’язкові права добросовісного споживача.
           </p>
 
           <h2>19. Зміни документа</h2>
           <p>
             Актуальна версія завжди публікується за адресою
-            camerofon.online/privacy/ із датою оновлення. Зміни застосовуються з
-            дати публікації або з іншої прямо зазначеної дати. Якщо зміни
-            істотно впливають на права користувача, про них може бути
-            повідомлено в застосунку або на сайті. Подальше використання сервісу
-            означає прийняття оновлених правил у межах, дозволених законом.
+            camerofon.online/privacy/ із датою оновлення.
+          </p>
+          <p>
+            Ми залишаємо за собою право вносити зміни до цих Правил користування
+            та Політики конфіденційності в будь-який час на власний розсуд. Ваше
+            подальше використання застосунку Camerofon після публікації таких
+            змін вважається вашою безумовною згодою з оновленими умовами.
+          </p>
+          <p>
+            Зміни застосовуються з дати публікації або з іншої прямо зазначеної
+            дати. Якщо зміни істотно впливають на права користувача, про них може
+            бути повідомлено в застосунку або на сайті. Ніщо в цьому розділі не
+            обмежує обов’язкові права споживача.
           </p>
 
-          <h2>20. Звернення щодо даних і правил</h2>
+          <h2>20. Припинення роботи сервісу</h2>
+          <p>
+            Camerofon залишає за собою право припинити підтримку застосунку,
+            закрити сервіс або розірвати цю угоду з вами в будь-який час, з
+            будь-якої причини, надіславши вам повідомлення (якщо це технічно
+            можливо) або опублікувавши відповідну інформацію на нашому сайті. У
+            разі такого припинення ви повинні негайно припинити використання
+            застосунку та видалити його зі своїх пристроїв.
+          </p>
+          <p>
+            Припинення роботи сервісу не обмежує прав, які не можуть бути
+            виключені або обмежені відповідно до застосовного законодавства.
+          </p>
+
+          <h2>21. Звернення щодо даних і правил</h2>
           <p>
             Запити щодо персональних даних, видалення доступних серверних даних,
             активації або цих правил можна надіслати через офіційний канал
@@ -437,7 +481,7 @@ export default function PrivacyPage() {
 
         <section id="en" lang="en">
           <h2>Privacy Policy and Terms of Use</h2>
-          <p className="privacy-updated">Last updated: 2 August 2026</p>
+          <p className="privacy-updated">Last updated: 3 August 2026</p>
           <p>
             This single document is both the Privacy Policy and the Terms of Use
             for the Camerofon mobile application and service. By installing,
@@ -735,25 +779,69 @@ export default function PrivacyPage() {
             rules established by applicable law.
           </p>
 
-          <h2>18. Suspension</h2>
+          <h2>18. Refusal of access and suspension</h2>
           <p>
-            Camerofon may reject, suspend or block a code or access in cases of
-            fraud, attempted circumvention, unauthorised code distribution,
-            security threats, breach of this document or a reasonable suspicion
-            of unlawful use. Mandatory rights of good-faith consumers remain
-            unaffected.
+            We do not guarantee that Camerofon services will be available to
+            every user without exception. We reserve the right, in our sole
+            discretion, to refuse any person registration, code activation or
+            access to the service without giving reasons.
+          </p>
+          <p>
+            Camerofon may immediately, without prior notice and without a
+            refund, suspend, restrict or completely block your access to the
+            service if:
+          </p>
+          <ul>
+            <li>
+              we have reasonable grounds to suspect that you use the application
+              for unlawful or covert surveillance;
+            </li>
+            <li>you breach any provision of these Terms;</li>
+            <li>
+              your activity threatens the security of our infrastructure, other
+              users or the reputation of Camerofon;
+            </li>
+            <li>
+              fraud, attempted circumvention or unauthorised code distribution
+              is detected.
+            </li>
+          </ul>
+          <p>
+            Mandatory rights of good-faith consumers remain unaffected.
           </p>
 
           <h2>19. Changes</h2>
           <p>
             The current version is always published at camerofon.online/privacy/
-            with its update date. Changes apply from publication or another
-            stated effective date. Material changes may be announced in the
-            application or on the website. Continued use constitutes acceptance
-            to the extent allowed by law.
+            with its update date.
+          </p>
+          <p>
+            We reserve the right to amend these Terms of Use and Privacy Policy
+            at any time in our sole discretion. Your continued use of the
+            Camerofon application after such changes are published constitutes
+            your unconditional acceptance of the updated terms.
+          </p>
+          <p>
+            Changes apply from publication or another stated effective date.
+            Material changes may be announced in the application or on the
+            website. Nothing in this section limits mandatory consumer rights.
           </p>
 
-          <h2>20. Data and terms requests</h2>
+          <h2>20. Discontinuation of the service</h2>
+          <p>
+            Camerofon reserves the right to discontinue support for the
+            application, shut down the service or terminate this agreement with
+            you at any time and for any reason by notifying you (where
+            technically possible) or publishing the relevant information on our
+            website. Upon such termination, you must immediately stop using the
+            application and delete it from your devices.
+          </p>
+          <p>
+            Discontinuation of the service does not limit rights that cannot be
+            excluded or restricted under applicable law.
+          </p>
+
+          <h2>21. Data and terms requests</h2>
           <p>
             Requests concerning personal data, deletion of available server
             data, activation or these terms may be sent through Camerofon&apos;s
