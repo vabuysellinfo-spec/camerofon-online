@@ -452,16 +452,15 @@ export default function Home() {
             <div><strong>Android 6.0+</strong><small>{t("Сумісна версія системи", "Compatible system version")}</small></div>
           </div>
           <div className="tested-devices">
-            <span>{t("Перевірено на пристроях", "Tested on devices")}</span>
+            <span>{t("Перевірено на реальних пристроях", "Tested on real devices")}</span>
             <div className="device-chips">
-              <b>Samsung A21s</b>
-              <b>Samsung A11</b>
-              <b>Samsung A12</b>
-              <b>Lenovo YT3-850M</b>
+              <b>Samsung</b>
+              <b>Lenovo</b>
+              <b>{t("Інші виробники", "Other manufacturers")}</b>
             </div>
           </div>
           <div className="device-note">
-            <strong>Lenovo · Android 6.0.1</strong>
+            <strong>{t("Реальні умови використання", "Real-world use")}</strong>
             <small>{t("Відео, звук і керування перевірені", "Video, audio and controls tested")}</small>
           </div>
         </div>
@@ -504,11 +503,11 @@ export default function Home() {
           </article>
           <article>
             <strong>{t("Технічні дані підключення", "Technical connection data")}</strong>
-            <p>{t("Для пошуку пристроїв і встановлення WebRTC-зв’язку обробляються технічні ідентифікатори, статус пристрою та службові сигнали.", "Technical identifiers, device status and service signals are processed to find devices and establish a WebRTC connection.")}</p>
+            <p>{t("Для пошуку та сполучення пристроїв обробляються технічні ідентифікатори, статус пристрою та службові сигнали. Для цього можуть використовуватися сторонні сервіси.", "Technical identifiers, device status and service signals are processed to find and pair devices. Third-party services may be used for this purpose.")}</p>
           </article>
           <article>
             <strong>{t("Відео та записи", "Video and recordings")}</strong>
-            <p>{t("Відеопотік передається через захищене WebRTC-з’єднання. Відео й аудіозаписи не зберігаються у Firestore.", "The video stream is transmitted over a secure WebRTC connection. Video and audio recordings are not stored in Firestore.")}</p>
+            <p>{t("Відео й аудіо передаються між сполученими пристроями. Для роботи цієї функції можуть використовуватися незалежні постачальники інфраструктури. Camerofon не зберігає відео або аудіозаписи.", "Video and audio are transmitted between paired devices. Independent infrastructure providers may be used to support this feature. Camerofon does not store video or audio recordings.")}</p>
           </article>
           <article>
             <strong>{t("Керування даними", "Data controls")}</strong>
