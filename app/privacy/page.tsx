@@ -298,8 +298,7 @@ export default function PrivacyPage() {
           <p>
             Робота сервісу може залежати від Android, виробника та стану
             пристрою, акумулятора, дозволів, локальної мережі, мобільного
-            оператора, доступу до інтернету, Firebase, WebRTC та інших сторонніх
-            компонентів. Camerofon не гарантує, що сервіс виявить, запише або
+            оператора, доступу до інтернету та інших сторонніх сервісів. Camerofon не гарантує, що сервіс виявить, запише або
             передасть кожну подію, і не замінює професійну охоронну чи екстрену
             систему.
           </p>
@@ -371,8 +370,7 @@ export default function PrivacyPage() {
             належати війна та бойові дії, стихійні лиха, пожежі, повені,
             тривалі аварії електромереж, масові збої інтернету чи мобільного
             зв’язку, кібератаки, обов’язкові рішення органів влади, а також
-            масштабні збої незалежних постачальників інфраструктури, зокрема
-            Firebase або мережевих компонентів WebRTC.
+            масштабні збої незалежних постачальників інфраструктури.
           </p>
           <p>
             Звичайний технічний збій не вважається автоматично форс-мажором.
@@ -673,7 +671,7 @@ export default function PrivacyPage() {
           <p>
             Operation may depend on Android, the manufacturer and condition of
             the device, battery, permissions, local networks, mobile operators,
-            internet access, Firebase, WebRTC and other third-party components.
+            internet access and other third-party services.
             Camerofon does not guarantee that the service will detect, record or
             transmit every event, and it is not a substitute for a professional
             security or emergency system.
@@ -742,8 +740,7 @@ export default function PrivacyPage() {
             and hostilities, natural disasters, fire, flooding, prolonged power
             failures, widespread internet or mobile-network outages,
             cyberattacks, binding government action, and large-scale failures of
-            independent infrastructure providers, including Firebase or WebRTC
-            network components.
+            independent infrastructure providers.
           </p>
           <p>
             An ordinary technical failure is not automatically treated as force
