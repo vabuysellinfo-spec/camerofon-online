@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Купити Basic-код — Camerofon",
   description:
-    "Тестова сторінка покупки одноразового Basic-коду Camerofon на 30 днів.",
+    "Купівля одноразового Basic-коду Camerofon на 30 днів через Telegram Stars.",
   alternates: { canonical: "/buy/" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 const icons = {
