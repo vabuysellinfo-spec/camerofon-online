@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import BuyMenuLink from "./components/BuyMenuLink";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://camerofon.online"),
@@ -35,7 +36,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="uk">
-      <body>{children}</body>
+      <body>
+        {children}
+        <BuyMenuLink />
+      </body>
     </html>
   );
 }
