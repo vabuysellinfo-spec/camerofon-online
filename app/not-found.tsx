@@ -5,13 +5,6 @@ import { useEffect, useState } from "react";
 
 type Language = "uk" | "en";
 
-const CameraIcon = () => (
-  <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M7 7.5 8.4 5h7.2L17 7.5h2A2 2 0 0 1 21 9.5v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h2Z" />
-    <circle cx="12" cy="13" r="3.3" />
-  </svg>
-);
-
 const HomeIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true">
     <path d="m4 10 8-6 8 6v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1v-9Z" />
@@ -55,7 +48,9 @@ export default function NotFound() {
 
       <header className="not-found-header">
         <Link className="brand" href="/" aria-label={t("Camerofon — на головну", "Camerofon — home")}>
-          <span className="brand-mark"><CameraIcon /></span>
+          <span className="brand-mark" aria-hidden="true">
+            <img src="/camerofon-icon-512.png" alt="" width="40" height="40" />
+          </span>
           <span>Camerofon</span>
         </Link>
         <div className="not-found-header-tools">

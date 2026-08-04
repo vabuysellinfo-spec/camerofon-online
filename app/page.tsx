@@ -111,7 +111,9 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label={t("Camerofon — на головну", "Camerofon — home")}>
-          <span className="brand-mark">{icons.camera}</span>
+          <span className="brand-mark" aria-hidden="true">
+            <img src="/camerofon-icon-512.png" alt="" width="40" height="40" />
+          </span>
           <span>Camerofon</span>
         </a>
 
@@ -557,7 +559,9 @@ export default function Home() {
 
       <footer className="site-footer">
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark">{icons.camera}</span>
+          <span className="brand-mark" aria-hidden="true">
+            <img src="/camerofon-icon-512.png" alt="" width="40" height="40" />
+          </span>
           <span>Camerofon</span>
         </a>
         <p>{t("Запасний телефон може бути корисним щодня.", "A spare phone can be useful every day.")}</p>

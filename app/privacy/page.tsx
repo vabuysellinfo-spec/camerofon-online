@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <header className="site-header">
         <a className="brand" href="/" aria-label="Camerofon — на головну">
           <span className="brand-mark" aria-hidden="true">
-            C
+            <img src="/camerofon-icon-512.png" alt="" width="40" height="40" />
           </span>
           <span>Camerofon</span>
         </a>
@@ -840,4 +840,3 @@ export default function PrivacyPage() {
     </main>
   );
 }
-

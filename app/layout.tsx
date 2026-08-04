@@ -15,8 +15,20 @@ export const metadata: Metadata = {
     siteName: "Camerofon",
     locale: "uk_UA",
     type: "website",
+    images: [
+      {
+        url: "/camerofon-icon-512.png",
+        width: 512,
+        height: 512,
+        alt: "Camerofon",
+      },
+    ],
   },
-  icons: { icon: "/favicon.svg" },
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "64x64" }],
+    shortcut: "/favicon.png",
+    apple: "/camerofon-icon-192.png",
+  },
   manifest: "/manifest.webmanifest",
 };
 

@@ -93,7 +93,9 @@ export default function BuyPage() {
 
       <header className="site-header buy-header">
         <a className="brand" href="/" aria-label="Camerofon — на головну">
-          <span className="brand-mark">{icons.camera}</span>
+          <span className="brand-mark" aria-hidden="true">
+            <img src="/camerofon-icon-512.png" alt="" width="40" height="40" />
+          </span>
           <span>Camerofon</span>
         </a>
         <nav className="language-nav" aria-label="Вибір мови">
@@ -226,7 +228,9 @@ export default function BuyPage() {
 
       <footer className="buy-footer">
         <a className="brand footer-brand" href="/">
-          <span className="brand-mark">{icons.camera}</span>
+          <span className="brand-mark" aria-hidden="true">
+            <img src="/camerofon-icon-512.png" alt="" width="40" height="40" />
+          </span>
           <span>Camerofon</span>
         </a>
         <p>© 2026 Camerofon</p>

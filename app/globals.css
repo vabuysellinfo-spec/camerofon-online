@@ -152,14 +152,21 @@ main {
 
 .brand-mark {
   align-items: center;
-  background: linear-gradient(145deg, #4d78ff, #2c58e4);
   border-radius: 12px;
-  box-shadow: 0 8px 22px rgba(56, 103, 245, 0.3);
-  color: white;
+  box-shadow: 0 8px 22px rgba(37, 67, 130, 0.2);
   display: inline-flex;
+  flex: 0 0 auto;
   height: 40px;
   justify-content: center;
+  overflow: hidden;
   width: 40px;
+}
+
+.brand-mark img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .brand-mark svg {
