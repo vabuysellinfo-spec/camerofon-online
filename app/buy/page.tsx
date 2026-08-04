@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "РљСѓРїРёС‚Рё Basic-РєРѕРґ вЂ” Camerofon",
+  title: "Купити Basic-код — Camerofon",
   description:
-    "РўРµСЃС‚РѕРІР° СЃС‚РѕСЂС–РЅРєР° РїРѕРєСѓРїРєРё РѕРґРЅРѕСЂР°Р·РѕРІРѕРіРѕ Basic-РєРѕРґСѓ Camerofon РЅР° 30 РґРЅС–РІ.",
+    "Тестова сторінка покупки одноразового Basic-коду Camerofon на 30 днів.",
   alternates: { canonical: "/buy/" },
   robots: { index: false, follow: true },
 };
@@ -74,8 +74,8 @@ function PurchaseCard({
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="price-placeholder">
-        <span>Р¦С–РЅР° / Price</span>
-        <strong>100 в­ђпёЏ Telegram Stars</strong>
+        <span>Ціна / Price</span>
+        <strong>100 ⭐️ Telegram Stars</strong>
       </div>
       <a href="https://t.me/CamerofonBot" target="_blank" rel="noopener noreferrer" className="buy-button">
         {buttonLabel}
@@ -91,19 +91,19 @@ export default function BuyPage() {
       <div className="ambient ambient-two" />
 
       <header className="site-header buy-header">
-        <a className="brand" href="/" aria-label="Camerofon вЂ” РЅР° РіРѕР»РѕРІРЅСѓ">
+        <a className="brand" href="/" aria-label="Camerofon — на головну">
           <span className="brand-mark" aria-hidden="true">
             <img src="/camerofon-icon-512.png" alt="" width="40" height="40" />
           </span>
           <span>Camerofon</span>
         </a>
-        <nav className="language-nav" aria-label="Р’РёР±С–СЂ РјРѕРІРё">
-          <a href="#uk">РЈРєСЂР°С—РЅСЃСЊРєР°</a>
-          <span aria-hidden="true">В·</span>
+        <nav className="language-nav" aria-label="Вибір мови">
+          <a href="#uk">Українська</a>
+          <span aria-hidden="true">·</span>
           <a href="#en">English</a>
         </nav>
         <a className="back-link" href="/">
-          в†ђ РќР° РіРѕР»РѕРІРЅСѓ
+          ← На головну
         </a>
       </header>
 
@@ -111,93 +111,93 @@ export default function BuyPage() {
         <div className="buy-hero-copy">
 
           <h1>
-            Basic-РєРѕРґ РґР»СЏ <span>Camerofon</span>
+            Basic-код для <span>Camerofon</span>
           </h1>
           <p>
-            РћРґРёРЅ РѕРґРЅРѕСЂР°Р·РѕРІРёР№ РєРѕРґ Р°РєС‚РёРІСѓС” РґРѕСЃС‚СѓРї РЅР° 30 РґРЅС–РІ. РџС–СЃР»СЏ РїРѕРєСѓРїРєРё РІРё
-            Р·РјРѕР¶РµС‚Рµ Р·Р°СЃС‚РѕСЃСѓРІР°С‚Рё Р№РѕРіРѕ РґР»СЏ РЅРѕРІРѕРіРѕ РїСѓР»СЊС‚Р°, РґРѕРґР°С‚РєРѕРІРѕС— РєР°РјРµСЂРё Р°Р±Рѕ
-            РїСЂРѕРґРѕРІР¶РµРЅРЅСЏ РІР¶Рµ РїС–РґРєР»СЋС‡РµРЅРѕС— РєР°РјРµСЂРё.
+            Один одноразовий код активує доступ на 30 днів. Після покупки ви
+            зможете застосувати його для нового пульта, додаткової камери або
+            продовження вже підключеної камери.
           </p>
-          <div className="hero-facts" aria-label="РћСЃРЅРѕРІРЅС– СѓРјРѕРІРё Basic-РєРѕРґСѓ">
-            <span>{icons.clock} 30 РґРЅС–РІ</span>
-            <span>{icons.key} РћРґРЅРѕСЂР°Р·РѕРІРёР№ РєРѕРґ</span>
-            <span>{icons.shield} Р‘РµР· Р°РІС‚РѕСЃРїРёСЃР°РЅСЊ</span>
+          <div className="hero-facts" aria-label="Основні умови Basic-коду">
+            <span>{icons.clock} 30 днів</span>
+            <span>{icons.key} Одноразовий код</span>
+            <span>{icons.shield} Без автосписань</span>
           </div>
         </div>
 
-        <div className="code-preview" aria-label="РџСЂРёРєР»Р°Рґ Basic-РєРѕРґСѓ">
+        <div className="code-preview" aria-label="Приклад Basic-коду">
           <div className="code-preview-top">
             <span className="purchase-icon">{icons.key}</span>
-            <span className="preview-status" style={{color: "var(--blue)", borderColor: "var(--blue)", background: "rgba(0, 102, 255, 0.1)"}}>Р”РѕСЃС‚СѓРїРЅРѕ Р·Р°СЂР°Р·</span>
+            <span className="preview-status" style={{color: "var(--blue)", borderColor: "var(--blue)", background: "rgba(0, 102, 255, 0.1)"}}>Доступно зараз</span>
           </div>
           <small>CAMEROFON BASIC</small>
           <strong>XXXX-XXXX-XXXX</strong>
           <div className="code-details">
-            <span><b>30</b><small>РґРЅС–РІ РґРѕСЃС‚СѓРїСѓ</small></span>
+            <span><b>30</b><small>днів доступу</small></span>
             <i />
-            <span><b>1</b><small>РІРёРєРѕСЂРёСЃС‚Р°РЅРЅСЏ</small></span>
+            <span><b>1</b><small>використання</small></span>
           </div>
           <a href="https://t.me/CamerofonBot" target="_blank" rel="noopener noreferrer" className="buy-button preview-button">
-            РљСѓРїРёС‚Рё С‡РµСЂРµР· Telegram
+            Купити через Telegram
           </a>
         </div>
       </section>
 
       <section className="buy-content" lang="uk">
         <div className="section-heading buy-heading">
-          <span className="section-kicker">РћРґРёРЅ РєРѕРґ В· С‚СЂРё РІР°СЂС–Р°РЅС‚Рё</span>
-          <h2>Р’РёР±РµСЂС–С‚СЊ РґС–СЋ РїС–Рґ С‡Р°СЃ Р°РєС‚РёРІР°С†С–С—</h2>
+          <span className="section-kicker">Один код · три варіанти</span>
+          <h2>Виберіть дію під час активації</h2>
           <p>
-            РЈ РІСЃС–С… РІРёРїР°РґРєР°С… РІРёРєРѕСЂРёСЃС‚РѕРІСѓС”С‚СЊСЃСЏ С‚РѕР№ СЃР°РјРёР№ Basic-РєРѕРґ. Р’Р°СЂС–Р°РЅС‚
-            РѕР±РёСЂР°С”С‚СЊСЃСЏ Р±РµР·РїРѕСЃРµСЂРµРґРЅСЊРѕ РІ Р·Р°СЃС‚РѕСЃСѓРЅРєСѓ Camerofon.
+            У всіх випадках використовується той самий Basic-код. Варіант
+            обирається безпосередньо в застосунку Camerofon.
           </p>
         </div>
 
         <div className="purchase-grid">
           <PurchaseCard
             icon={icons.phone}
-            eyebrow="РџРµСЂС€РёР№ Р·Р°РїСѓСЃРє"
-            title="РђРєС‚РёРІСѓРІР°С‚Рё РЅРѕРІРёР№ РїСѓР»СЊС‚"
-            description="РђРєС‚РёРІСѓС” РѕРґРёРЅ С‚РµР»РµС„РѕРЅ-РїСѓР»СЊС‚ С‚Р° РѕРґРЅРµ РјС–СЃС†Рµ РґР»СЏ РєР°РјРµСЂРё РЅР° 30 РґРЅС–РІ."
-            buttonLabel="РљСѓРїРёС‚Рё РєРѕРґ"
+            eyebrow="Перший запуск"
+            title="Активувати новий пульт"
+            description="Активує один телефон-пульт та одне місце для камери на 30 днів."
+            buttonLabel="Купити код"
           />
           <PurchaseCard
             icon={icons.plus}
-            eyebrow="Р©Рµ РѕРґРЅР° РєР°РјРµСЂР°"
-            title="Р”РѕРґР°С‚Рё РјС–СЃС†Рµ РґР»СЏ РєР°РјРµСЂРё"
-            description="Р”РѕРґР°С” РґРѕ Р°РєС‚РёРІРѕРІР°РЅРѕРіРѕ РїСѓР»СЊС‚Р° С‰Рµ РѕРґРЅРµ РјС–СЃС†Рµ РґР»СЏ РїС–РґРєР»СЋС‡РµРЅРЅСЏ РєР°РјРµСЂРё."
-            buttonLabel="РљСѓРїРёС‚Рё РєРѕРґ"
+            eyebrow="Ще одна камера"
+            title="Додати місце для камери"
+            description="Додає до активованого пульта ще одне місце для підключення камери."
+            buttonLabel="Купити код"
           />
           <PurchaseCard
             icon={icons.refresh}
-            eyebrow="РџСЂРѕРґРѕРІР¶РµРЅРЅСЏ"
-            title="РџСЂРѕРґРѕРІР¶РёС‚Рё РІРёР±СЂР°РЅСѓ РєР°РјРµСЂСѓ"
-            description="РџСЂРѕРґРѕРІР¶СѓС” РґРѕСЃС‚СѓРї РґР»СЏ РІРёР±СЂР°РЅРѕС— РїС–РґРєР»СЋС‡РµРЅРѕС— РєР°РјРµСЂРё С‰Рµ РЅР° 30 РґРЅС–РІ."
-            buttonLabel="РљСѓРїРёС‚Рё РєРѕРґ"
+            eyebrow="Продовження"
+            title="Продовжити вибрану камеру"
+            description="Продовжує доступ для вибраної підключеної камери ще на 30 днів."
+            buttonLabel="Купити код"
           />
         </div>
 
         <div className="how-panel">
           <div>
-            <span className="section-kicker">РЇРє С†Рµ РїСЂР°С†СЋРІР°С‚РёРјРµ</span>
-            <h2>Р’С–Рґ РїРѕРєСѓРїРєРё РґРѕ Р°РєС‚РёРІР°С†С–С—</h2>
+            <span className="section-kicker">Як це працюватиме</span>
+            <h2>Від покупки до активації</h2>
           </div>
           <ol>
-            <li><span>1</span><p><strong>РћР±РµСЂС–С‚СЊ Basic-РєРѕРґ</strong><small>РљРѕРґ РѕРґРёРЅ, Р° РґС–СЋ РІРё РІРёР±РµСЂРµС‚Рµ РїС–Р·РЅС–С€Рµ РІ Р·Р°СЃС‚РѕСЃСѓРЅРєСѓ.</small></p></li>
-            <li><span>2</span><p><strong>РћРїР»Р°С‚С–С‚СЊ Сѓ Telegram</strong><small>РџРµСЂРµР№РґС–С‚СЊ Сѓ РЅР°С€РѕРіРѕ РѕС„С–С†С–Р№РЅРѕРіРѕ Р±РѕС‚Р° С‚Р° РѕРїР»Р°С‚С–С‚СЊ РєРѕРґ Р·Р° РґРѕРїРѕРјРѕРіРѕСЋ Telegram Stars. РљРѕРґ Р±СѓРґРµ РІРёРґР°РЅРѕ РјРёС‚С‚С”РІРѕ.</small></p></li>
-            <li><span>3</span><p><strong>Р’РІРµРґС–С‚СЊ Сѓ Camerofon</strong><small>Р’С–РґРєСЂРёР№С‚Рµ РµРєСЂР°РЅ Р°РєС‚РёРІР°С†С–С— С‚Р° РІРІРµРґС–С‚СЊ 12 СЃРёРјРІРѕР»С–РІ РєРѕРґСѓ.</small></p></li>
+            <li><span>1</span><p><strong>Оберіть Basic-код</strong><small>Код один, а дію ви виберете пізніше в застосунку.</small></p></li>
+            <li><span>2</span><p><strong>Оплатіть у Telegram</strong><small>Перейдіть у нашого офіційного бота та оплатіть код за допомогою Telegram Stars. Код буде видано миттєво.</small></p></li>
+            <li><span>3</span><p><strong>Введіть у Camerofon</strong><small>Відкрийте екран активації та введіть 12 символів коду.</small></p></li>
           </ol>
         </div>
 
         <aside className="important-note">
           <span>{icons.shield}</span>
           <div>
-            <strong>Р’Р°Р¶Р»РёРІРѕ РїРµСЂРµРґ Р°РєС‚РёРІР°С†С–С”СЋ</strong>
+            <strong>Важливо перед активацією</strong>
             <p>
-              Basic-РєРѕРґ С” РѕРґРЅРѕСЂР°Р·РѕРІРёРј. Р’РёРґР°Р»РµРЅРЅСЏ Р·Р°СЃС‚РѕСЃСѓРЅРєСѓ, РІС‚СЂР°С‚Р° РєРѕРґСѓ,
-              РїРѕР»РѕРјРєР° Р°Р±Рѕ Р·Р°РјС–РЅР° С‚РµР»РµС„РѕРЅР° РЅРµ РІС–РґРЅРѕРІР»СЋСЋС‚СЊ РІРёРєРѕСЂРёСЃС‚Р°РЅРёР№ РєРѕРґ
-              Р°РІС‚РѕРјР°С‚РёС‡РЅРѕ. Р”РµС‚Р°Р»СЊРЅС– СѓРјРѕРІРё Р·Р°Р·РЅР°С‡РµРЅС– Сѓ
-              {" "}<a href="/privacy/">РџРѕР»С–С‚РёС†С– РєРѕРЅС„С–РґРµРЅС†С–Р№РЅРѕСЃС‚С– С‚Р° РїСЂР°РІРёР»Р°С… РєРѕСЂРёСЃС‚СѓРІР°РЅРЅСЏ</a>.
+              Basic-код є одноразовим. Видалення застосунку, втрата коду,
+              поломка або заміна телефона не відновлюють використаний код
+              автоматично. Детальні умови зазначені у
+              {" "}<a href="/privacy/">Політиці конфіденційності та правилах користування</a>.
             </p>
           </div>
         </aside>
@@ -229,10 +229,10 @@ export default function BuyPage() {
           </span>
           <span>Camerofon</span>
         </a>
-        <p>В© 2026 Camerofon</p>
-        <nav aria-label="Р®СЂРёРґРёС‡РЅР° С–РЅС„РѕСЂРјР°С†С–СЏ">
-          <a href="/privacy/">РџРѕР»С–С‚РёРєР° С‚Р° РїСЂР°РІРёР»Р°</a>
-          <a href="/">Р“РѕР»РѕРІРЅР°</a>
+        <p>© 2026 Camerofon</p>
+        <nav aria-label="Юридична інформація">
+          <a href="/privacy/">Політика та правила</a>
+          <a href="/">Головна</a>
         </nav>
       </footer>
 
