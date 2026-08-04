@@ -257,26 +257,33 @@ export default function BuyPage() {
         .code-details b { font-size: 18px; }
         .code-details small { color: #8a95a8; font-size: 9px; }
         .code-details i { background: var(--line); height: 34px; }
-        .buy-button { background: #dfe5ef; border: 0; border-radius: 13px; color: #8792a5; cursor: not-allowed; display: block; font-family: inherit; font-size: 12px; font-weight: 730; min-height: 46px; opacity: 1; padding: 13px 18px; width: 100%; }
+        
+        /* Виправлені стилі для активних кнопок! */
+        .buy-button { align-items: center; background: #0066ff; border: 0; border-radius: 13px; color: #ffffff; cursor: pointer; display: flex; font-family: inherit; font-size: 14px; font-weight: 700; justify-content: center; min-height: 46px; padding: 13px 18px; text-decoration: none; transition: transform 0.2s, background 0.2s; width: 100%; position: relative; z-index: 10; }
+        .buy-button:hover { background: #0052cc; transform: translateY(-1px); color: #ffffff; }
+        .buy-button:active { transform: scale(0.98); }
+        .english-button { background: #ffffff; color: #000000; max-width: 340px; }
+        .english-button:hover { background: #f0f2f6; color: #000000; }
+        
         .buy-content { margin: 0 auto; max-width: 1184px; padding: 40px 28px 100px; position: relative; z-index: 2; }
         .buy-heading { margin: 0 auto 44px; text-align: center; }
         .buy-heading h2, .how-panel h2, .english-block h2 { font-size: clamp(34px, 4vw, 50px); letter-spacing: -2.1px; margin: 12px 0 15px; }
         .buy-heading p { color: var(--muted); font-size: 16px; line-height: 1.7; margin: 0 auto; max-width: 690px; }
         .purchase-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
         .purchase-card { background: rgba(255,255,255,.74); border: 1px solid rgba(255,255,255,.94); border-radius: 25px; box-shadow: 10px 12px 28px rgba(44,68,112,.08), -8px -8px 22px rgba(255,255,255,.9); display: flex; flex-direction: column; min-height: 450px; padding: 28px; }
-        .purchase-icon { align-items: center; background: var(--blue-soft); border-radius: 14px; color: var(--blue); display: inline-flex; height: 48px; justify-content: center; width: 48px; }
+        .purchase-icon { align-items: center; background: #eef4ff; border-radius: 14px; color: #0066ff; display: inline-flex; height: 48px; justify-content: center; width: 48px; }
         .purchase-icon svg { height: 24px; width: 24px; }
-        .card-eyebrow { color: var(--blue); font-size: 10px; font-weight: 760; letter-spacing: .7px; margin-top: 24px; text-transform: uppercase; }
+        .card-eyebrow { color: #0066ff; font-size: 10px; font-weight: 760; letter-spacing: .7px; margin-top: 24px; text-transform: uppercase; }
         .purchase-card h3 { font-size: 22px; letter-spacing: -.7px; line-height: 1.24; margin: 10px 0 12px; }
         .purchase-card > p { color: var(--muted); font-size: 13px; line-height: 1.65; margin: 0; min-height: 66px; }
-        .price-placeholder { border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 5px; margin-top: auto; padding: 22px 0 17px; }
+        .price-placeholder { border-top: 1px solid var(--line, #e9ecef); display: flex; flex-direction: column; gap: 5px; margin-top: auto; padding: 22px 0 17px; }
         .price-placeholder span { color: #98a2b3; font-size: 9px; font-weight: 700; text-transform: uppercase; }
         .price-placeholder strong { font-size: 16px; }
         .purchase-card > small { color: #9aa4b5; font-size: 8px; line-height: 1.45; margin-top: 10px; text-align: center; }
         .how-panel { align-items: start; background: linear-gradient(145deg, #edf3ff, #e7eeff); border: 1px solid rgba(255,255,255,.88); border-radius: 31px; box-shadow: 16px 18px 44px rgba(45,69,119,.11), -12px -12px 30px white; display: grid; gap: 65px; grid-template-columns: .8fr 1.2fr; margin-top: 72px; padding: 48px; }
         .how-panel ol { display: grid; gap: 18px; list-style: none; margin: 0; padding: 0; }
         .how-panel li { align-items: flex-start; display: flex; gap: 14px; }
-        .how-panel li > span { align-items: center; background: white; border-radius: 12px; box-shadow: 5px 6px 15px rgba(55,78,126,.09); color: var(--blue); display: flex; flex: 0 0 auto; font-size: 12px; font-weight: 760; height: 38px; justify-content: center; width: 38px; }
+        .how-panel li > span { align-items: center; background: white; border-radius: 12px; box-shadow: 5px 6px 15px rgba(55,78,126,.09); color: #0066ff; display: flex; flex: 0 0 auto; font-size: 12px; font-weight: 760; height: 38px; justify-content: center; width: 38px; }
         .how-panel p { display: flex; flex-direction: column; gap: 5px; margin: 1px 0 0; }
         .how-panel strong { font-size: 13px; }
         .how-panel small { color: #74829a; font-size: 11px; line-height: 1.5; }
@@ -284,15 +291,15 @@ export default function BuyPage() {
         .important-note > span { align-items: center; background: #e8f7f2; border-radius: 12px; color: #278b6d; display: flex; flex: 0 0 auto; height: 42px; justify-content: center; width: 42px; }
         .important-note strong { font-size: 13px; }
         .important-note p { color: var(--muted); font-size: 11px; line-height: 1.65; margin: 6px 0 0; }
-        .important-note a { color: var(--blue); font-weight: 680; text-decoration: underline; text-decoration-color: rgba(56,103,245,.3); text-underline-offset: 3px; }
+        .important-note a { color: #0066ff; font-weight: 680; text-decoration: underline; text-decoration-color: rgba(56,103,245,.3); text-underline-offset: 3px; }
         .english-block { background: radial-gradient(circle at 80% 20%, rgba(128,158,255,.45), transparent 34%), linear-gradient(135deg, #183466, #2e58cd 62%, #3867ef); border-radius: 34px; box-shadow: 0 30px 70px rgba(33,66,152,.24); color: white; margin: 0 auto 100px; max-width: 1128px; padding: 56px; position: relative; z-index: 2; }
         .english-block .section-kicker { color: #bed0ff; }
         .english-block > p { color: #d6dff8; font-size: 15px; line-height: 1.7; max-width: 760px; }
         .english-facts { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0; }
         .english-facts span { align-items: center; background: rgba(255,255,255,.11); border: 1px solid rgba(255,255,255,.17); border-radius: 12px; display: inline-flex; font-size: 11px; gap: 8px; padding: 10px 12px; }
-        .english-button { max-width: 340px; }
+        
         .english-block > small { color: #aebeea; display: block; font-size: 9px; margin-top: 10px; }
-        .buy-footer { align-items: center; border-top: 1px solid var(--line); display: grid; gap: 24px; grid-template-columns: auto 1fr auto; margin: 0 auto; max-width: 1184px; padding: 40px 28px 50px; position: relative; z-index: 2; }
+        .buy-footer { align-items: center; border-top: 1px solid var(--line, #e9ecef); display: grid; gap: 24px; grid-template-columns: auto 1fr auto; margin: 0 auto; max-width: 1184px; padding: 40px 28px 50px; position: relative; z-index: 2; }
         .buy-footer p { color: #8b95a7; font-size: 11px; margin: 0; }
         .buy-footer nav { display: flex; gap: 20px; }
         .buy-footer nav a { color: #68758c; font-size: 11px; font-weight: 620; }
