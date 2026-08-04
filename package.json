@@ -1,6 +1,6 @@
 {
   "name": "camerofon-online",
-  "version": "1.25.24",
+  "version": "1.25.38",
   "private": true,
   "scripts": {
     "dev": "next dev",

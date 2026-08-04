@@ -4,7 +4,7 @@ Official website for Camerofon: an Android app that turns a spare phone into a r
 
 - Website: https://camerofon.online
 - Privacy policy: https://camerofon.online/privacy/
-- Stable app version: 1.25.24
+- Stable app version: 1.25.38
 
 The site is statically exported with Next.js and deployed through GitHub Pages.
 

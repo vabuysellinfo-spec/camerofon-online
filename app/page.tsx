@@ -473,16 +473,26 @@ export default function Home() {
             <h2>Camerofon 1.25.38</h2>
             <p>{t("Підписаний APK для Android 6.0 і новіших версій. Реліз перевірено на реальних пристроях.", "Signed APK for Android 6.0 and later. The release has been tested on physical devices.")}</p>
             <div className="release-facts">
-              <span><b>03.08.2026</b><small>{t("Дата релізу", "Release date")}</small></span>
-              <span><b>APK</b><small>{t("Формат файла", "File format")}</small></span>
-              <span><b>SHA-256</b><small>{t("Контрольна сума", "Checksum")}</small></span>
+              <span><b>04.08.2026</b><small>{t("Дата релізу", "Release date")}</small></span>
+              <span><b>{t("66,4 МБ", "66.4 MB")}</b><small>{t("Розмір файла", "File size")}</small></span>
+              <span><b>Android 6.0+</b><small>{t("Сумісність", "Compatibility")}</small></span>
             </div>
           </div>
           <div className="download-card">
             <span className="download-card-icon">{icons.download}</span>
-            <strong>Camerofon-1.25.38.apk</strong>
-            <p id="download-note">{t("Файл підготовлено. Завантаження відкриється після публікації релізу в офіційному сховищі.", "The file is ready. Downloads will become available after the release is published in the official repository.")}</p>
-            <span className="pending-button" aria-disabled="true">{t("APK готується до публікації", "APK is being prepared for publication")}</span>
+            <strong>Camerofon-1.25.38-release.apk</strong>
+            <p id="download-note">{t("Офіційний підписаний release APK. Після завантаження Android може попросити дозволити встановлення застосунків із браузера.", "Official signed release APK. After downloading, Android may ask you to allow app installation from your browser.")}</p>
+            <a
+              className="download-button"
+              href="https://github.com/vabuysellinfo-spec/camerofon-online/releases/download/v1.25.38/Camerofon-1.25.38-release.apk"
+              aria-describedby="download-note"
+            >
+              {icons.download}
+              {t("Завантажити APK", "Download APK")}
+            </a>
+            <code className="release-hash" title={t("SHA-256 контрольна сума файла", "SHA-256 file checksum")}>
+              SHA-256: 9220ad84b65bad407d6be79f9d00bc5b20fee6fa21d213b3df2bb6e9dffc62f4
+            </code>
             <small>{t("Не завантажуйте Camerofon зі сторонніх сайтів.", "Do not download Camerofon from third-party websites.")}</small>
           </div>
         </div>
