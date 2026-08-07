@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CryptoPayButton from "./CryptoPayButton";
 
 export const metadata: Metadata = {
   title: "Купити Basic-код — Camerofon",
@@ -80,6 +81,7 @@ function PurchaseCard({
       <a href="https://t.me/CamerofonBot" target="_blank" rel="noopener noreferrer" className="buy-button">
         {buttonLabel}
       </a>
+      <CryptoPayButton />
     </article>
   );
 }
@@ -140,6 +142,7 @@ export default function BuyPage() {
           <a href="https://t.me/CamerofonBot" target="_blank" rel="noopener noreferrer" className="buy-button preview-button">
             Купити через Telegram
           </a>
+          <CryptoPayButton />
         </div>
       </section>
 
