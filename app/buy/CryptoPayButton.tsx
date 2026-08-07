@@ -17,8 +17,56 @@ type PaymentState =
   | { step: "timeout" }
   | { step: "error"; message: string };
 
+const i18n = {
+  uk: {
+    or: "або",
+    payBtn: "Оплатити криптовалютою",
+    note: "Оплата через OxaPay · $1 USD",
+    creatingTitle: "Створюємо рахунок…",
+    creatingSub: "Зачекайте кілька секунд",
+    redirectingTitle: "Перенаправляємо на оплату…",
+    redirectingSub: "Ви будете перенаправлені на сторінку OxaPay",
+    pollingTitle: "Очікуємо підтвердження…",
+    pollingSub: "Як тільки оплата буде підтверджена в мережі, ваш Basic-код з'явиться тут автоматично.",
+    paidTitle: "Оплата підтверджена!",
+    copied: "Скопійовано ✓",
+    copy: "Скопіювати код",
+    paidSub: "Збережіть цей код — він одноразовий. Введіть його в застосунку Camerofon на екрані активації.",
+    close: "Закрити",
+    timeoutTitle: "Оплату ще обробляють",
+    timeoutSub: "Підтвердження може зайняти деякий час. Якщо ви вже оплатили, спробуйте повернутися на цю сторінку пізніше — код буде видано автоматично.",
+    errorTitle: "Помилка",
+    tryAgain: "Спробувати знову",
+  },
+  en: {
+    or: "or",
+    payBtn: "Pay with cryptocurrency",
+    note: "Powered by OxaPay · $1 USD",
+    creatingTitle: "Creating invoice…",
+    creatingSub: "Please wait a few seconds",
+    redirectingTitle: "Redirecting to payment…",
+    redirectingSub: "You will be redirected to the OxaPay page",
+    pollingTitle: "Waiting for confirmation…",
+    pollingSub: "Once the payment is confirmed on the network, your Basic code will appear here automatically.",
+    paidTitle: "Payment confirmed!",
+    copied: "Copied ✓",
+    copy: "Copy code",
+    paidSub: "Save this code — it is single-use. Enter it in the Camerofon app on the activation screen.",
+    close: "Close",
+    timeoutTitle: "Payment is still processing",
+    timeoutSub: "Confirmation may take some time. If you have already paid, try returning to this page later — the code will be issued automatically.",
+    errorTitle: "Error",
+    tryAgain: "Try again",
+  }
+};
+
+type CryptoPayButtonProps = {
+  lang?: "uk" | "en";
+};
+
 // ─── Component ──────────────────────────────────────────────
-export default function CryptoPayButton() {
+export default function CryptoPayButton({ lang = "uk" }: CryptoPayButtonProps) {
+  const t = i18n[lang];
   const [state, setState] = useState<PaymentState>({ step: "idle" });
   const [showModal, setShowModal] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -153,7 +201,7 @@ export default function CryptoPayButton() {
       {/* ─── Crypto Pay Button ─── */}
       <div className="crypto-pay-section">
         <div className="crypto-divider">
-          <span>або</span>
+          <span>{t.or}</span>
         </div>
         <button
           className="crypto-pay-button"
@@ -161,11 +209,11 @@ export default function CryptoPayButton() {
           disabled={state.step !== "idle" && state.step !== "paid" && state.step !== "error" && state.step !== "timeout"}
         >
           <span className="crypto-icons" aria-hidden="true">₿</span>
-          <span>Оплатити криптовалютою</span>
+          <span>{t.payBtn}</span>
           <span className="crypto-badge">USDT · BTC · ETH</span>
         </button>
         <small className="crypto-note">
-          Оплата через OxaPay · $1 USD
+          {t.note}
         </small>
       </div>
 
@@ -177,8 +225,8 @@ export default function CryptoPayButton() {
             {state.step === "creating" && (
               <div className="crypto-modal-body">
                 <div className="crypto-spinner" />
-                <p className="crypto-modal-title">Створюємо рахунок…</p>
-                <p className="crypto-modal-sub">Зачекайте кілька секунд</p>
+                <p className="crypto-modal-title">{t.creatingTitle}</p>
+                <p className="crypto-modal-sub">{t.creatingSub}</p>
               </div>
             )}
 
@@ -186,8 +234,8 @@ export default function CryptoPayButton() {
             {state.step === "redirecting" && (
               <div className="crypto-modal-body">
                 <div className="crypto-spinner" />
-                <p className="crypto-modal-title">Перенаправляємо на оплату…</p>
-                <p className="crypto-modal-sub">Ви будете перенаправлені на сторінку OxaPay</p>
+                <p className="crypto-modal-title">{t.redirectingTitle}</p>
+                <p className="crypto-modal-sub">{t.redirectingSub}</p>
               </div>
             )}
 
@@ -195,9 +243,9 @@ export default function CryptoPayButton() {
             {state.step === "polling" && (
               <div className="crypto-modal-body">
                 <div className="crypto-spinner" />
-                <p className="crypto-modal-title">Очікуємо підтвердження…</p>
+                <p className="crypto-modal-title">{t.pollingTitle}</p>
                 <p className="crypto-modal-sub">
-                  Як тільки оплата буде підтверджена в мережі, ваш Basic-код з&apos;явиться тут автоматично.
+                  {t.pollingSub}
                 </p>
               </div>
             )}
@@ -206,36 +254,36 @@ export default function CryptoPayButton() {
             {state.step === "paid" && (
               <div className="crypto-modal-body crypto-success">
                 <div className="crypto-success-icon">✓</div>
-                <p className="crypto-modal-title">Оплата підтверджена!</p>
+                <p className="crypto-modal-title">{t.paidTitle}</p>
                 <div className="crypto-code-display">
                   <small>CAMEROFON BASIC</small>
                   <strong>{state.code}</strong>
                   <button className="crypto-copy-btn" onClick={() => handleCopy(state.code)}>
-                    {copied ? "Скопійовано ✓" : "Скопіювати код"}
+                    {copied ? t.copied : t.copy}
                   </button>
                 </div>
                 <p className="crypto-modal-sub">
-                  Збережіть цей код — він одноразовий. Введіть його в застосунку Camerofon на екрані активації.
+                  {t.paidSub}
                 </p>
-                <button className="crypto-close-btn" onClick={handleClose}>Закрити</button>
+                <button className="crypto-close-btn" onClick={handleClose}>{t.close}</button>
               </div>
             )}
 
             {/* Timeout */}
             {state.step === "timeout" && (
               <div className="crypto-modal-body">
-                <p className="crypto-modal-title">Оплату ще обробляють</p>
+                <p className="crypto-modal-title">{t.timeoutTitle}</p>
                 <p className="crypto-modal-sub">
-                  Підтвердження може зайняти деякий час. Якщо ви вже оплатили, спробуйте повернутися на цю сторінку пізніше — код буде видано автоматично.
+                  {t.timeoutSub}
                 </p>
-                <button className="crypto-close-btn" onClick={handleClose}>Закрити</button>
+                <button className="crypto-close-btn" onClick={handleClose}>{t.close}</button>
               </div>
             )}
 
             {/* Error */}
             {state.step === "error" && (
               <div className="crypto-modal-body">
-                <p className="crypto-modal-title">Помилка</p>
+                <p className="crypto-modal-title">{t.errorTitle}</p>
                 <p className="crypto-modal-sub">{state.message}</p>
                 <button
                   className="crypto-close-btn"
@@ -244,7 +292,7 @@ export default function CryptoPayButton() {
                     setState({ step: "idle" });
                   }}
                 >
-                  Спробувати знову
+                  {t.tryAgain}
                 </button>
               </div>
             )}

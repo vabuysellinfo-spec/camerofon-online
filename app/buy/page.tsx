@@ -222,7 +222,7 @@ export default function BuyPage() {
         <a href="https://t.me/CamerofonBot" target="_blank" rel="noopener noreferrer" className="buy-button english-button">
           Buy via Telegram
         </a>
-        <CryptoPayButton />
+        <CryptoPayButton lang="en" />
         <small>Payments are processed securely via Telegram Stars.</small>
       </section>
 
